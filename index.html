@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/global.css" />
+    <title>Password generator</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="containerBox">
+        <input type="text" disabled />
+        <button>
+          <i class="fa-regular fa-copy" id="link"></i>
+        </button>
+      </div>
+
+      <div class="rangeBox">
+        <input type="range" min="6" max="16" value="8">
+        <span class="sliderNumber">8</span>
+      </div>
+
+      <button id="button">Generate Password</button>
+    </div>
+
+
+
+
+    <script
+      src="https://kit.fontawesome.com/721fa646a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>

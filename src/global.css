@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 380px;
+  height: 350px;
+  border-radius: 3rem;
+  border: 1px solid #EEE;
+}
+
+.containerBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.containerBox input,
+.containerBox button {
+  padding: 0.5rem;
+}
+
+.containerBox input {
+  width: 200px;
+  height: 50px;
+  border-radius: 3rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid #eee;
+  color: #EEE;
+
+}
+
+.containerBox input::placeholder {
+    color: #b5b2b2;
+}
+
+.containerBox button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #eee;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover > * {
+    color: #ff3cac;
+  }
+
+  &:hover {
+    border: 1px solid #ff3cac;
+  }
+}
+
+.containerBox button i {
+  font-size: 1rem;
+  color: #EEE;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.rangeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rangeBox input {
+    accent-color: #ff3cac;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.rangeBox span {
+    color: #EEE;
+    font-size: 1.5rem;
+}
+
+#button {
+    padding: 0.7rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid #EEE;
+    background: transparent;
+    color: #EEE;
+    width: 185px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: #ff3cac;
+        border: 1px solid #ff3cac;
+    }
+}
